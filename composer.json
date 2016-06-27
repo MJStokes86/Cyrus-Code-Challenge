@@ -1,0 +1,12 @@
+{
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.4.6"
+    },
+    "autoload": {
+        "psr-0": {
+            "code_test": ""
+        }
+    }
+}
