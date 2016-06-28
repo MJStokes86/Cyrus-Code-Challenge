@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="vendor/autoload.php"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	stopOnFailures="false"
+	syntaxCheck="false">
+    <testsuites>
+        <testsuite name="Cyrus Code Test Suite">
+            <directory>./Test/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

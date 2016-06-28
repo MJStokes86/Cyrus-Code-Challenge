@@ -1,5 +1,9 @@
 
 <?php 
+
+
+
+
 	
 	$space_txt = './data/input/space.txt';
 	$comma_txt = './data/input/comma.txt';
@@ -93,6 +97,7 @@
 
 	return $arr;
 }
+
 
 ?>
 

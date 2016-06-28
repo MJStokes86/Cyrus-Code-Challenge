@@ -1,4 +1,4 @@
-<?php require_once("./data/parsed_data.php") ?>
+<?php require_once("./ParsedData.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
