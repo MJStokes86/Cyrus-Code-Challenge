@@ -61,7 +61,6 @@
 				$arr[] = [
 					"last_name" => trim($data_arr[0]),
 					"first_name" => trim($data_arr[1]),
-					// "middle_initial" => trim($data_arr[2]),
 					"gender" => changeGender(trim($data_arr[3])),
 					"date_of_birth" => normalizeDate(trim($data_arr[4])),
 					"favorite_color" => trim($data_arr[5])
@@ -83,7 +82,6 @@
 					$arr[] = [
 					"last_name" => trim($data_arr[0]),
 					"first_name" => trim($data_arr[1]),
-					// "middle_initial" => trim($data_arr[2]),
 					"gender" => changeGender(trim($data_arr[3])),
 					"date_of_birth" => normalizeDate(trim($data_arr[5])),
 					"favorite_color" => trim($data_arr[4])
@@ -97,6 +95,55 @@
 
 	return $arr;
 }
+
+
+function sortGenderByLastName() {
+	global $finalArray;
+
+	foreach ($finalArray as $key => $row) {
+	$gender[$key] = $row['gender'];
+	$last_name[$key] = $row['last_name'];
+}
+
+array_multisort($gender, SORT_ASC, $last_name, SORT_ASC, $finalArray);
+
+foreach ($finalArray as $row) {
+	echo join(' ', $row) . "<br>\n";
+}
+
+
+
+}
+
+function sortBirthDateByLastName() {
+	global $finalArray;
+
+	usort($finalArray, 'sortLastName');
+	usort($finalArray, 'sortDate');
+
+ foreach ($finalArray as $row) {
+ 	echo join(' ', $row) . "<br>\n";
+ }	
+
+
+
+}
+
+function sortByLastNameDesc() {
+	global $finalArray;
+
+	foreach ($finalArray as $key => $row) {
+ 	$last_name[$key] = $row['last_name'];
+ }
+
+ array_multisort($last_name, SORT_DESC, $finalArray);
+
+ foreach ($finalArray as $row) {
+ 	echo join(' ', $row) . "<br>\n";
+ }	
+}
+
+
 
 
 ?>
