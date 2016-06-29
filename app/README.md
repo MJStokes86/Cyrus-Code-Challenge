@@ -11,7 +11,7 @@ Check to see if PHP is installed
 
 Clone the respository
 
-	https://github.com/MJStokes86/Cyrus-Code-Test.git
+	https://github.com/MJStokes86/Cyrus-Code-Challenge.git
 
 Install PHP dependencies
 
