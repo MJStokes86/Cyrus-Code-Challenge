@@ -19,6 +19,7 @@
 
 <?php echo sortGenderByLastName(); ?>
 
+
 <h1>Output 2</h1>
 
 <?php echo sortBirthDateByLastName(); ?>
