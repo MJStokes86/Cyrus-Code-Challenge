@@ -60,7 +60,7 @@ function testMyExplodeLoopFunc() {
 		'last_name' => 'Kournikova',
 		'first_name' => 'Anna',
 		'gender' => 'F',
-		'date_of_birth' => '6-3-1975',
+		'date_of_birth' => '6/3/1975',
 		'favorite_color' => 'Red'];
 
 
