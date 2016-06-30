@@ -77,9 +77,9 @@ function testMyExplodeLoopFunc() {
 function testSortGenderByLastName() {
 
 	
-	$test = array_multisort(['Smith'], SORT_ASC, ['Male'], SORT_ASC);
+	$sort = array_multisort(['Smith'], SORT_ASC, ['Male'], SORT_ASC);
 
-	$this->assertTrue($test, sortGenderByLastName());
+	$this->assertTrue($sort, sortGenderByLastName());
 
 
 }
